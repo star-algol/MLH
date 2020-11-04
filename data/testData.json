@@ -1,0 +1,13 @@
+{
+  "name": "StarAlgol",
+  "age": 101,
+  "gender": {
+    "he": 0,
+    "she": 1,
+    "it": 2
+  },
+  "storyType": {
+    "comedy": 6
+  }
+
+}
