@@ -62,7 +62,7 @@ describe('Checking the main functionality', function () {
 
     describe('Other path', function () {
 
-        it('TC-000 Gender HE is working', function () {
+        it('TC-030 Gender HE is working', function () {
             browser.url('');
             inputValue4andClick(inputData.name, inputData.gender.she, inputData.age, inputData.storyType.comedy);
             const btn = $(sel.tryAgain).isDisplayed();
@@ -98,17 +98,17 @@ describe('Checking the main functionality', function () {
         //     const create = $$(sel.create).isDisplayed();
         //     expect(create).toEqual(true);
         // });
-        // it('TC-021 Create button is clickable after 1-4 sre filled in', function () {
-        //     browser.url('');
-        //     const inputName = $(sel.name).addValue(inputData.name);
-        //     const inputGender = $$(sel.gender)[inputData.gender.she].click();
-        //     // const inputGender = $$(sel.gender)[1].click();
-        //     const inputAge = $(sel.age).setValue(inputData.age);
-        //     const click = $(sel.storyClick).click();
-        //     const inputStory = $$(sel.storyType)[6].click();
-        //     const create = $(sel.create).isEnabled();
-        //     expect(create).toEqual(true);
-        // });
+        it('TC-031 Create button is clickable after 1-4 sre filled in', function () {
+            browser.url('');
+            const inputName = $(sel.name).addValue(inputData.name);
+            // const inputGender = $$(sel.gender)[inputData.gender.she].click();
+            const inputGender = $$(sel.gender)[1].click();
+            const inputAge = $(sel.age).setValue(inputData.age);
+            const click = $(sel.storyClick).click();
+            const inputStory = $$(sel.storyType)[6].click();
+            const create = $(sel.create).isEnabled();
+            expect(create).toEqual(true);
+        });
 
     });
 

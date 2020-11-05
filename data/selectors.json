@@ -1,4 +1,6 @@
 {
+  "header": "//div[@class='hero__form']/h3",
+  "headerUndertext": "//div[@class='hero__form']/p",
   "label": ".ant-form-item-required",
   "name": "#name",
   "gender": ".ant-radio",
@@ -7,5 +9,14 @@
   "create": ".ant-btn",
   "storyClick": ".ant-select-show-arrow",
   "storyType": ".ant-select-item-option",
-  "tryAgain": ".btn-primary"
+  "imageInput": "span.ant-upload",
+  "tryAgain": ".btn-primary",
+  "placeholderName": "#name",
+  "placeholderGenderHe": "(//span[@class='ant-radio']) [1]/following-sibling::span",
+  "placeholderGenderShe": "(//span[@class='ant-radio']) [2]/following-sibling::span",
+  "placeholderGenderIt": "(//span[@class='ant-radio']) [3]/following-sibling::span",
+  "placeholderAge": "#age",
+  "placeholderStoryType": ".ant-select-selection-placeholder",
+  "placeholderPlus": "//*[@data-icon='plus']",
+  "placeholderImage": "//*/span[@class='anticon anticon-plus']/following-sibling::div"
 }
