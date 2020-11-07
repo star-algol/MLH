@@ -50,7 +50,7 @@ describe('Inputs', function () {
             });
 
             it('TC-022 Image input field Plus', function () {
-            const imgPlus = $(sel.placeholderPlus).isDisplayed();
+            const imgPlus = $(sel.placeholderPlus).isClickable();
             expect(imgPlus).toEqual(true);
             });
         // });
