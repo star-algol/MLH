@@ -18,5 +18,6 @@
   "placeholderAge": "#age",
   "placeholderStoryType": ".ant-select-selection-placeholder",
   "placeholderPlus": "//*[@data-icon='plus']",
-  "placeholderImage": "//*/span[@class='anticon anticon-plus']/following-sibling::div"
+  "placeholderImage": "//*/span[@class='anticon anticon-plus']/following-sibling::div",
+  "valuesInText": ".card-text"
 }

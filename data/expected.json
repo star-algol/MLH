@@ -13,5 +13,6 @@
   },
   "plchAge": "Hero's age",
   "plchStory": "Type of the story",
-  "plchImage": "drag and drop your image here or browse"
+  "plchImage": "drag and drop your image here or browse",
+  "checkAge": ["123", "two", "three", "four", "five"]
 }
