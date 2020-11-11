@@ -9,7 +9,7 @@
   "create": ".ant-btn",
   "storyClick": ".ant-select-show-arrow",
   "storyType": ".ant-select-item-option",
-  "imageInput": "span.ant-upload",
+  "imageInput": ".ant-upload input",
   "tryAgain": ".btn-primary",
   "placeholderName": "#name",
   "placeholderGenderHe": "(//span[@class='ant-radio']) [1]/following-sibling::span",
@@ -19,5 +19,6 @@
   "placeholderStoryType": ".ant-select-selection-placeholder",
   "placeholderPlus": "//*[@data-icon='plus']",
   "placeholderImage": "//*/span[@class='anticon anticon-plus']/following-sibling::div",
-  "valuesInText": ".card-text"
+  "valuesInText": ".card-text",
+  "ageErrUnreal": ".ant-form-item-explain"
 }

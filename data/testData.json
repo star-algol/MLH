@@ -7,8 +7,14 @@
     "it": 2
   },
   "storyType": {
-    "comedy": 6
+    "monster": 1,
+    "rebirth": 2,
+    "quest": 3,
+    "journey": 4,
+    "ragzriches": 5,
+    "tragedy": 6,
+    "comedy": 7
   },
-  "testAge": [123, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  "testAge": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 }

@@ -1,12 +1,14 @@
 const sel = require('../../data/selectors.json');
 const expected = require('../../data/expected.json');
+const inputData = require('../../data/testData.json')
+const inputValueExAge = require('../../helpers/inputValueExAge');
 
 describe('Inputs', function () {
 
     describe('Inputs are clickable', function () {
         // before(() => {
-        //     browser.maximizeWindow();
         //     browser.url('https://qa-apps.netlify.app/app_my_hero');
+        //     browser.maximizeWindow();
 
             it('TC-014 Name', function () {
                 browser.url('');//takes the app address from wdio.conf.io string #93
@@ -58,8 +60,8 @@ describe('Inputs', function () {
 
     describe('Placeholders are correct', function () {
         // before(() => {
-        //     browser.maximizeWindow();
         //     browser.url('https://qa-apps.netlify.app/app_my_hero');
+        //     browser.maximizeWindow();
 
             it('TC-023 Plch Name = Hero\'s name', function () {
                 browser.url('');
@@ -96,8 +98,21 @@ describe('Inputs', function () {
             const plchImage = $(sel.placeholderImage).getText();
             expect(plchImage).toEqual(expected.plchImage);
             });
-
         // });
+
+    });
+
+    describe('Age input accepts 1 to 12 symbols', function () {
+
+        it.only('TC-030 Check age input field accepts 12 symbols', function () {
+            browser.url('');
+            inputValueExAge(inputData.name, inputData.gender.it, inputData.storyType.comedy);
+            const heroAge = new Array(12).fill("5").join('');
+            $(sel.age).setValue(heroAge);
+            browser.pause(2000);
+            expect($(sel.age).getValue()).toEqual(expected.heroAge["12sym"]);
+            $(sel.create).click();
+        });
 
     });
 });

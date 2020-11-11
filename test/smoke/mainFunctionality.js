@@ -1,7 +1,6 @@
 const sel = require('../../data/selectors.json');
 const inputData = require('../../data/testData.json');
 const inputValues4 = require('../../helpers/inputValues4');
-const inputValue4andClick = require('../../helpers/inputValues4andClick');
 const path = require('path');
 
 
@@ -9,7 +8,7 @@ describe('Checking the main functionality', function () {
 
     describe('Happy path', function () {
 
-        it('TC-021 Create button is clickable after 1-4 sre filled in', function () {
+        it('TC-021 Create button is clickable after 1-4 are filled in', function () {
             browser.url('');
             inputValues4(inputData.name, inputData.gender.she, inputData.age, inputData.storyType.comedy);
             const create = $(sel.create).isEnabled();
@@ -40,16 +39,18 @@ describe('Checking the main functionality', function () {
         // });
 
         it('TC-032 Uploads photo', function () {
+            browser.url('');
            inputValues4(inputData.name, inputData.gender.it, inputData.age, inputData.storyType.comedy);
-          const filePath = path.join(__dirname, '../../data/photoMignon.jpg');
+           const filePath = path.join(__dirname, '../../data/iu.png');
            const imgPath = browser.uploadFile(filePath);
+           browser.execute(function() {
+               document.getElementsByTagName('input')[6].style.display = "block";
+           });
            $(sel.imageInput).waitForDisplayed();
-           browser.pause(5000);
            $(sel.imageInput).setValue(imgPath);
            browser.pause(5000);
            $(sel.create).click();
-           browser.pause(5000);
-            //const filePath = path.join(__dirname, '../smoke/DSC_2702.jpeg');
+            browser.pause(5000);
 
         });
 
