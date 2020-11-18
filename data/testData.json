@@ -7,14 +7,19 @@
     "it": 2
   },
   "storyType": {
-    "monster": 1,
-    "rebirth": 2,
-    "quest": 3,
-    "journey": 4,
-    "ragzriches": 5,
-    "tragedy": 6,
-    "comedy": 7
+    "monster": 0,
+    "rebirth": 1,
+    "quest": 2,
+    "journey": 3,
+    "ragzriches": 4,
+    "tragedy": 5,
+    "comedy": 6
   },
-  "testAge": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  "testAge": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "heroAge": {
+    "1sym": 5,
+    "4sym": 5555,
+    "0sym": ""
+  }
 
 }

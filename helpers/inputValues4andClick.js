@@ -6,7 +6,7 @@ function inputValues4andClick (name, gender, age, storyType){
     $(sel.age).setValue(age);
     $(sel.storyClick).click();
     $$(sel.storyType)[storyType].click();
-    $(sel.create).click();
+    $(sel.submitBtn).click();
 }
 
 module.exports = inputValues4andClick;

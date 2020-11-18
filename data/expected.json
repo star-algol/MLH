@@ -14,11 +14,13 @@
   "plchAge": "Hero's age",
   "plchStory": "Type of the story",
   "plchImage": "drag and drop your image here or browse",
-  "checkAge": ["one", "two", "three", "four", "five"],
+  "checkAge": ["1", "2", "three", "four", "five"],
   "heroAge": {
+    "13sym": "5555555555555",
     "12sym": "555555555555",
     "4sym": "5555",
-    "1sym": "5"
+    "1sym": "5",
+    "0sym": ""
   }
 
 
